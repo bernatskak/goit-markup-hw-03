@@ -21,6 +21,7 @@ body {
 
   color: var(--main-color);
 }
+
 /* Common Styles */
 .link {
   text-decoration: none;
@@ -28,23 +29,29 @@ body {
 }
 
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 /* Header */
 .header {
+  border-bottom: 1px solid #ececec;
   background-color: var(--main-light-color);
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .container {
   width: 1170px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0px;
   padding-left: 15px;
   padding-right: 15px;
-  border: 2px solid tomato;
 }
 .current {
-  padding: 24px 0px 25px 0px;
   font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
@@ -53,10 +60,6 @@ body {
   color: var(--current-color);
 }
 .site-nav {
-  margin-top: 32px;
-  margin-right: 344px;
-  margin-bottom: 32px;
-  width: 281px;
 }
 .site-nav .current-item {
   font-size: 14px;
@@ -65,11 +68,6 @@ body {
 }
 
 .site-logo {
-  width: 145px;
-  margin-top: 24px;
-  margin-bottom: 25px;
-  margin-left: 47px;
-  margin-right: 93px;
   font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
@@ -93,7 +91,6 @@ body {
   color: var(--current-color);
 }
 .contact .contact-type {
-  margin: auto 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -125,21 +122,32 @@ body {
 }
 /*Hero*/
 
-.section {
+.container-title {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
   background-color: var(--border-color);
 }
 .section-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-family: var(--main-font-family);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-light-color);
 }
-
 .button {
+  padding: 10px 32px;
+  border-radius: 4px;
+  min-width: 200px;
+  text-align: center;
   border: none;
   background-color: var(--current-color);
   cursor: pointer;
@@ -177,6 +185,9 @@ body {
 
   color: var(--main-color);
 }
+.title > p {
+  padding-bottom: 10;
+}
 
 .feature .text {
   font-weight: 400;
@@ -187,7 +198,9 @@ body {
   color: var(--secondary-color);
 }
 /*Work*/
+
 .about-work {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -204,6 +217,7 @@ body {
 }
 
 .team-list {
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -212,6 +226,7 @@ body {
 }
 
 .about-name {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -232,6 +247,8 @@ body {
 }
 /*Contacts*/
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--border-color);
 }
 .secondary-current {
@@ -244,6 +261,7 @@ body {
   color: var(--main-light-color);
 }
 .adress {
+  margin-top: 20px;
   font-style: normal;
 }
 .street {
