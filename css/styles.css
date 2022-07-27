@@ -228,7 +228,10 @@ body {
 /*Features*/
 .feature-list{
   width: 270px;
-  margin-right: 30px;
+  gap: 30px;
+}
+.feature {
+  justify-content: space-between;
 }
 .feature .title {
   font-weight: 700;
